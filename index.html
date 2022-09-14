@@ -7,13 +7,103 @@
     <title>Paris Blog</title>
 </head>
 <body>
-    <h1 style="text-align: center;">P A R I S</h1>
-    <p>This is a city blog</p>
+    <style>
+        body, html {
+            margin: 0;
+        }
 
-    <ol>
-        <li>Quartiers</li>
-        <li>History</li>
-        <li>Landmarks</li>
-    </ol>
+        h4 {
+            margin: 5rem 2rem 2rem;
+        }
+
+        /* Place text section in the middle of the page/image */
+        .text{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -17%);
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Style the background map image and add filters */
+        .bg-map {
+            background-image: url(map_bg.png);
+            filter: brightness(1.4) blur(6.5px);
+            height: 100%;
+            background-repeat: repeat;
+            background-size: cover;
+            background-color: #ffffff; /*fallback color if image is unavailable*/
+        }
+
+        /* Style the color sections */
+        .bg-color{
+            background-color: #c9ffceda;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+    </style>
+
+
+    <div>
+        <!-- The background image -->
+        <img src="map_bg.png" alt="maps" class="bg-map">
+        
+        <section class="text">
+
+            <article>
+                <h1 style="margin: .3rem;">P A R I S</h1>
+                <em>City blog</em>
+                
+                <h4>A brief history about the city...</h4>
+                <p>
+                    The history of <strong>Paris</strong> dates back to approximately 259 BC, with the Parisii, a Celtic tribe settled on the banks of the Seine. 
+                    In 52 BC, the fishermen village was conquered by the Romans, founding a Gallo-Roman town called Lutetia. The city changed its name to Paris during the fourth century.
+                    In 508 the first king of the Franks, Clovis I, made Paris the capital of his empire. During the eleventh century, 
+                    Paris gradually became more prosper thanks to its trade in silver and because it was a strategic route for pilgrims and traders.
+                    <br><br>
+                    
+                    Since the 17th century, Paris has been one of the world's major centres of finance, diplomacy, commerce, fashion, gastronomy, science, and arts, and has sometimes been referred to as the capital of the world or <em>the City of Light</em>.
+                    From the twentieth century on, Paris suffered important changes with the reconstruction of different neighborhoods, many damaged during WWI and WWII.
+                    Today, it has an estimated population of a little more than 2 million residents in an area of ~105 km². Worlwide, the city of <strong>Paris</strong> is the 34th most densely populated (2020) and ranked the 2nd highest cost of living (2021).
+                </p>
+            </article>
+
+            <article class="bg-color">
+                <h3>10 history facts</h3>
+                <ol>
+                    <li>It has 5 replicas of Statues Of Liberty</li>
+                    <li>You can walk through the city from North to South in 2 hours</li>
+                    <li>It is the world capital of fashion</li>
+                    <li>The first photo ever taken was in Paris</li>
+                    <li>It has no “STOP” signs on its roads</li>
+                    <li>There are 20 arrondissements in the city</li>
+                    <li>You need <strong>200</strong> days to see everything in the Louvre Museum</li>
+                    <li>It has an underground city</li>
+                    <li>Eiffel Tower was a initially temporary structure</li>
+                    <li>It's NOT the largest french-speaking city</li>
+                </ol>
+            </article>
+            
+            <article>
+                <h4>Favorite food</h4>
+                <p>My all time favorite piece of <em>gastronomie francaise</em> are definately <em>croissants</em>. 
+                    Might seem like a be very cliché or basic choice, but I swear that when the croissants are properly cooked, they're a very indulgent treat to have.</p>
+                    <img src="https://www.viajarafrancia.com/wp-content/uploads/2011/11/croissant.jpg" alt="Croissants" height="200px">
+            </article>
+                
+            <article class="bg-color">
+                <h4>Photos from Paris</h4>
+                <p>A remarkable place to visit in the city</p>
+                <figure>
+                    <img src="https://img.freepik.com/foto-gratis/torre-eiffel-paris-hermosos-colores-otono_268835-828.jpg?w=740&t=st=1663107883~exp=1663108483~hmac=3237f4f7ea33b315ab93d73216d80a9956c839a946ec7a91acb66cfd69ca5093" alt="Eiffel tower" height="400px">
+                    <figcaption>The Eiffel Tower</figcaption>
+                </figure>
+            </article>
+                
+        </section>
+    </div>
+            
 </body>
 </html>
